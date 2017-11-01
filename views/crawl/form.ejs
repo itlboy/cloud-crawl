@@ -1,13 +1,3 @@
-<style type="text/css" media="screen">
-    #code { 
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
-</style>
-
 <div class="row">
     <form method="POST" action="/crawl/run" class="col s12">
         <div class="row">
@@ -21,7 +11,7 @@
             <div class="input-field col s12">
                 <i class="material-icons prefix">code</i>
                 <textarea name="code" id="code" class="materialize-textarea"></textarea>
-                <label for="textarea1">Javascript code</label>
+                <!--<label for="textarea1">Javascript code</label>-->
             </div>
         </div>
         <div class="row">
@@ -33,6 +23,7 @@
         </div>
     </form>
 </div>
+<div id="code"></div>
 <script>
     var sampleJsCode = "var result = {} ;\n\
  result.title = $('.title_news').first().text().trim();\n\
@@ -41,8 +32,17 @@
     $('#code').trigger('autoresize');
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.9/ace.js" type="text/javascript" charset="utf-8"></script>
+
+<div id="editor">
+    function foo(items) {
+    var x = "All this is syntax highlighted";
+    return x;
+    $.
+}</div>
+
 <script>
-    var editor = ace.edit("code");
-    editor.setTheme("ace/theme/monokai");
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/solarized_light");
     editor.getSession().setMode("ace/mode/javascript");
 </script>
+    

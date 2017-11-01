@@ -20,9 +20,11 @@
     "grunt-sails-linker": "~0.10.1",
     "grunt-sync": "0.5.2",
     "include-all": "^1.0.0",
+    "prismjs": "^1.8.3",
     "rc": "1.0.1",
     "sails": "~0.12.14",
     "sails-disk": "~0.10.9",
+    "sails-memory": "^0.10.7",
     "sails-mysql": "^0.11.5"
   },
   "scripts": {
