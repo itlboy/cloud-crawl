@@ -27,7 +27,7 @@ var crawl = function (uri, code, callback) {
                     returnResult.message = "fail";
                     returnResult.error = {
                         type: "Run custom js code fail",
-                        message: e.message
+                        message: e.message,
                     };
                 }
                 callback(false, returnResult);
